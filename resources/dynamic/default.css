@@ -1,0 +1,28 @@
+.rc-anchor-pt{display:none;}
+
+#adc_{%= CurrentADC.InstanceId %} {
+	margin: auto;
+    text-align: center;
+    display: block;
+	width: 50%;
+}
+
+.recaptcha {
+  display: inline-block;
+  position: relative;
+  margin:auto;
+  text-align
+}
+
+.recaptcha:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 3px;
+    right: 5px;
+    width: 100px;
+    height: 70px;
+    background-color: #f9f9f9;
+    margin:auto;
+}

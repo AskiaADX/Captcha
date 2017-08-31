@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control  xmlns="http://www.askia.com/2.1.0/ADCSchema"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.askia.com/2.1.0/ADCSchema https://raw.githubusercontent.com/AskiaADX/ADXSchema/2.1.0/ADCSchema.xsd"
+          version="2.1.0"
+          askiaCompat="5.4.2">
+  <info>
+    <name>adc2-captcha</name>
+    <guid>81e6c410-d037-4277-a192-9a8fd50a17ba</guid>
+    <version>1.0.0</version>
+    <date>2017-06-07</date>
+    <description><![CDATA[]]></description>
+    <company></company>
+    <author><![CDATA[]]></author>
+    <site></site>
+    <helpURL></helpURL>
+    <categories>
+      <category>General</category>
+    </categories>
+    <constraints>
+      <constraint on="questions" chapter="true" single="true" multiple="false" numeric="false" date="false" open="true" requireParentLoop="false" />
+      <constraint on="controls" responseblock="true" label="true" textbox="true" checkbox="false" listbox="false" radiobutton="false" />
+      <constraint on="responses" max="*" min="*" />
+    </constraints>
+  </info>
+  <outputs defaultOutput="default">
+    <output id="default">
+      <description><![CDATA[Default output]]></description>
+      <content fileName="default.html" type="html" mode="dynamic" position="placeholder" />
+      <content fileName="default.js" type="javascript" mode="dynamic" position="foot" />
+      <content fileName="default.css" type="css" mode="dynamic" position="head" />
+    </output>
+  </outputs>
+  <properties>
+    <category id="general" name="General">
+      <property xsi:type="standardProperty" id="key" name="Site Key" type="string" mode="static" require="true" visible="true">
+        <description><![CDATA[The key for using google captcha on your site. To generate a key (https://www.google.com/recaptcha/admin#list)]]></description>
+        <value></value>
+      </property>
+    </category>
+  </properties>
+</control>

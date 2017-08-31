@@ -1,0 +1,7 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<div id="adc_{%= CurrentADC.InstanceId %}">
+<br/><br/>
+    <div class="g-recaptcha" data-sitekey="{%= CurrentADC.PropValue("key") %}" data-callback="CheckResponse"></div>
+
+</div>
